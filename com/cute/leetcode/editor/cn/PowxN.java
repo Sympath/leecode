@@ -30,12 +30,17 @@ package com.cute.leetcode.editor.cn;
 public class PowxN {
     public static void main(String[] args) {
         Solution solution = new PowxN().new Solution();
-        solution.myPow(2.00000, 10);
+        System.out.println(solution.myPow(2.00000, 10));
     }
     //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public double myPow(double x, int n) {
-        double result = 1;
+        long N = n;
+        if(N < 0){
+            x = 1 / x;
+            N = -N;
+        }
+        return fastPow(x,N);
         // recursion terminator  终止条件
 
         // process logic in current level  处理当前层逻辑代码
@@ -43,12 +48,25 @@ class Solution {
         // drill down  进入下一层
 
         // reverse the current level status if needed  如果需要，清理当前层状态
-        for (int i = 0; i < n; i++) {
-            result *= x;
-        }
-        return  result;
+//        for (int i = 0; i < n; i++) {
+//            result *= x;
+//        }
+//        return  result;
     }
-}
+
+        private double fastPow(double x, long n) {
+                if(n == 0){
+                    return  1.0;
+                }
+                double half = fastPow(x,n / 2);
+                if(n % 2 == 0){
+                    return  half * half;
+                }
+                else  {
+                    return  half * half * x;
+                }
+        }
+    }
 //leetcode submit region end(Prohibit modification and deletion)
 
 }
