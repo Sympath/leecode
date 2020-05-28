@@ -34,10 +34,17 @@ public class MaximumDepthOfBinaryTree {
  *     TreeNode(int x) { val = x; }
  * }
  */
+ public class TreeNode {
+      int val;
+      TreeNode left;
+      TreeNode right;
+      TreeNode(int x) { val = x; }
+ }
 class Solution {
     public int maxDepth(TreeNode root) {
         if(root == null) return 0;
-        return Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+        int i = Math.max(maxDepth(root.left), maxDepth(root.right)) + 1;
+        return i;
     }
 }
 //leetcode submit region end(Prohibit modification and deletion)
