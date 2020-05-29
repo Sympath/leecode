@@ -3,6 +3,14 @@
   <component name="LeetcodeEditor">
     <option name="projectConfig">
       <map>
+        <entry key="$PROJECT_DIR$/com/cute/leetcode/editor/cn/AddTwoNumbers.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/com/cute/leetcode/editor/cn/AddTwoNumbers.java" />
+              <option name="questionId" value="2" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/com/cute/leetcode/editor/cn/MaximumDepthOfBinaryTree.java">
           <value>
             <LeetcodeEditor>
@@ -16,6 +24,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/com/cute/leetcode/editor/cn/PowxN.java" />
               <option name="questionId" value="50" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/com/cute/leetcode/editor/cn/Subsets.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/com/cute/leetcode/editor/cn/Subsets.java" />
+              <option name="questionId" value="78" />
             </LeetcodeEditor>
           </value>
         </entry>
