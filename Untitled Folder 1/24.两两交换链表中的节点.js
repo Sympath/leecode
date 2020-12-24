@@ -17,18 +17,29 @@
  * @return {ListNode}
  */
 var swapPairs = function(head) {
-    let thead = new ListNode(0);
-    thead.next = head;
-    let tmp = thead;
-    while(tmp.next != null && tmp.next.next != null){
-        let start = tmp.next;
-        let end = start.next;
-        tmp.next = end;
-        start.next = end.next;
-        end.next = start;
-        tmp = start;
-    }
-    return thead.next;
+   let temp,a,b,answer;
+   a=head;
+   if(a = null || a.next == null ){
+       return a;
+   }
+   answer=b=a.next;
+//    while (b) {
+//         temp = b.next;
+//         b.next = null;
+//         swap(a,b);
+//         b.next = temp;
+//         a.next = b;
+//         a = b;
+//         b = b.next;
+//    }
+   return 1;
+   function swap(a,b) {
+       let temp ;
+       temp = b;
+       b = a;
+       a = temp;
+   }
+
 };
 // @lc code=end
 

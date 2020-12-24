@@ -19,13 +19,13 @@ var subsets = function(nums) {
                 return;
             }
 
-        // process logic in current level  处理当前层逻辑代码  
+        // process logic in current level  处理当前层逻辑代码
         // drill down  进入下一层
-          
+
             dfs(nums,index+1,[...list]);
             list.push(nums[index])
             dfs(nums,index + 1,[...list]);
-           
+
         // reverse the current level status if needed  如果需要，清理当前层状态
             // list.pop()
     }
